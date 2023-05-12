@@ -280,7 +280,7 @@ function App() {
           </Box>   
         </Box>
       }
-      <Box sx={{width: width>400?'80%':'100%'}}><Line data={data} /></Box>
+      <Box sx={{width: width>400?'80%':'100%', maxWidth: '1000px'}}><Line data={data} /></Box>
       {ready&&<Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <Typography sx={{fontSize: 'inherit'}} variant='h6'>Последнее обновление: {statistic.interfaces[int].updated.date.day}.{statistic.interfaces[int].updated.date.month}.{statistic.interfaces[int].updated.date.year}  {statistic.interfaces[int].updated.time.hour}:{statistic.interfaces[int].updated.time.minute}</Typography>
         <Typography sx={{fontSize: 'inherit'}} variant='h6'>Всего: rx: {totalData.rx}, tx: {totalData.tx}</Typography>
