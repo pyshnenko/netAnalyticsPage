@@ -66,7 +66,7 @@ function App() {
 
   const fetchData = async () => {
     trig.current = false;
-    const rData = await fetch('https://spamigor.site/stat/stat.json');
+    const rData = await fetch('https://spamigor.ru/stat/stat.json');
     const data = await rData.json();
     return data;
   }
